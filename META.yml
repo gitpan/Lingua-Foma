@@ -1,0 +1,27 @@
+---
+abstract: 'XS Bindings to the Foma Finite State Morphology Toolkit'
+author:
+  - 'Nils Diewald'
+build_requires:
+  ExtUtils::MakeMaker: '0'
+configure_requires:
+  ExtUtils::MakeMaker: '0'
+dynamic_config: 1
+generated_by: 'ExtUtils::MakeMaker version 6.82, CPAN::Meta::Converter version 2.120351'
+license: gpl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: '1.4'
+name: Lingua-Foma
+no_index:
+  directory:
+    - t
+    - inc
+requires:
+  File::Temp: '0'
+  Test::More: '0'
+  perl: '5.010001'
+resources:
+  license: https://www.gnu.org/licenses/gpl-2.0.txt
+  repository: https://github.com/Akron/Lingua-Foma
+version: 0.01_1

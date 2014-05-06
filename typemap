@@ -1,0 +1,3 @@
+TYPEMAP
+Lingua::Foma	T_PTROBJ
+Lingua::Foma::Iterator	T_PTROBJ
