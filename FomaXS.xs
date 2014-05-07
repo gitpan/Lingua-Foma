@@ -138,6 +138,7 @@ MODULE = Lingua::Foma      PACKAGE = Lingua::Foma
 Lingua::Foma
 new(char * package, char * regex)
   CODE:
+    (void)package;
     CHECK_REGEX;
     RETVAL = fsm_parse_regex(regex);
     if (RETVAL == NULL) {
@@ -160,7 +161,10 @@ DESTROY(Lingua::Foma this)
 # IOMethod: load
 Lingua::Foma
 load(char * package, char * file)
+  INIT:
+    Lingua__Foma new;
   CODE:
+    (void)package;
     if (strlen(file) == 0) {
       if (PL_dowarn) {
  	warn("Please define a file");
@@ -168,7 +172,7 @@ load(char * package, char * file)
       XSRETURN_UNDEF;
     };
 
-    Lingua__Foma new = fsm_read_binary_file(file);
+    new = fsm_read_binary_file(file);
 
     if (new == NULL) {
       if (PL_dowarn) {
