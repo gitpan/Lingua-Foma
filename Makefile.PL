@@ -17,7 +17,7 @@ WriteMakefile(
   DEFINE         => '',
   INC            => '-I.',
   OBJECT         => '$(O_FILES)',
-  CCFLAGS        => '-Wno-gnu',
+  CCFLAGS        => '-D_GNU_SOURCE -std=c99',
   LICENSE        => 'gpl_2',
   META_MERGE => {
     requires => { perl => '5.010001' },

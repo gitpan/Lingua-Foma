@@ -4,7 +4,7 @@
       "Nils Diewald"
    ],
    "dynamic_config" : 1,
-   "generated_by" : "ExtUtils::MakeMaker version 6.82, CPAN::Meta::Converter version 2.120351",
+   "generated_by" : "ExtUtils::MakeMaker version 6.82, CPAN::Meta::Converter version 2.141170",
    "license" : [
       "gpl_2"
    ],
@@ -47,5 +47,5 @@
          "url" : "https://github.com/Akron/Lingua-Foma"
       }
    },
-   "version" : "0.01_2"
+   "version" : "0.01_3"
 }
