@@ -24,4 +24,4 @@ requires:
 resources:
   license: https://www.gnu.org/licenses/gpl-2.0.txt
   repository: https://github.com/Akron/Lingua-Foma
-version: 0.01_3
+version: 0.01_4

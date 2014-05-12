@@ -55,7 +55,8 @@ iterator->word   = WORDVAR;\
 if ((iterator->handle = apply_init(this)) == NULL) {\
   if (PL_dowarn)\
     warn("Unable to initialize apply iterator");\
-  safefree(iterator);\
+  free(iterator);\
+  iterator = NULL;\
   XSRETURN_UNDEF;\
 };\
 SvREFCNT_inc(iterator->fsm = (SV*)SvRV(ST(0)));\
@@ -331,7 +332,6 @@ down(Lingua::Foma this, char * word)
         mXPUSHp(result, strlen(result));
         result = apply_down(ah, NULL);
       };
-      free(word);
       apply_clear(ah);
       XSRETURN(1);
     };
@@ -415,6 +415,7 @@ iter_DESTROY(SV * this)
     SvREFCNT_dec(iter->fsm);
     apply_clear(iter->handle);
     free(iter);
+    iter = NULL;
 
 
 # next

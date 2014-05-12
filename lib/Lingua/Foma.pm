@@ -2,7 +2,7 @@ package Lingua::Foma;
 use strict;
 use warnings;
 use XSLoader;
-our $VERSION = '0.01_3';
+our $VERSION = '0.01_4';
 
 XSLoader::load('Lingua::Foma', $VERSION);
 

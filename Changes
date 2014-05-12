@@ -1,3 +1,6 @@
+0.01_4 2014-05-12
+        - Recheck memory freeing.
+
 0.01_3 2014-05-11
         - Further changes to compiler flags.
 
