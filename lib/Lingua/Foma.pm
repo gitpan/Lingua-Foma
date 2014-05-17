@@ -2,7 +2,7 @@ package Lingua::Foma;
 use strict;
 use warnings;
 use XSLoader;
-our $VERSION = '0.01_4';
+our $VERSION = '0.01_5';
 
 XSLoader::load('Lingua::Foma', $VERSION);
 
@@ -60,7 +60,7 @@ created with Foma (using LexC and xfst) and L<translating strings|/APPLICATION M
 but this library also provides methods to create and modify automata
 and retrieve properties.
 
-B<This module is a developer realease - the API may change without notification!>
+B<This module is a developer release - the API may change without notification!>
 
 
 =head1 ATTRIBUTES
@@ -339,6 +339,9 @@ Will return C<undef> if no further result can be found.
 
 
 =head1 KNOWN BUGS AND CAVEATS
+
+Following L<cpantesters' results|http://www.cpantesters.com/author/A/AKRON.html#Lingua-Foma>
+the library won't work with OpenBSD and variants of GNUkfreeBSD.
 
 Currently an iterator may loose a corresponding
 transducer, if the transducer is modified by a

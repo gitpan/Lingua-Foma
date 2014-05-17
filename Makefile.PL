@@ -13,7 +13,7 @@ WriteMakefile(
   },
   ABSTRACT       => 'XS Bindings to the Foma Finite State Morphology Toolkit',
   AUTHOR         => 'Nils Diewald',
-  LIBS           => ['-lz'],
+  LIBS           => ['-lz -lc'],
   DEFINE         => '',
   INC            => '-I.',
   OBJECT         => '$(O_FILES)',
